@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+    
+    "nav"
+    "main"
+    "footer";
+
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 7fr 2fr;
+    
+
+}
+
+/* BARRA DE NAVEGACION */
+
+.barra-nav{
+
+    grid-area: nav;
+    background-color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.img-barra-nav{
+
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    
+}
+
+.items-barra-nav{
+
+    list-style: none;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+.seccion a{
+    
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    font-size: 1rem;
+
+    transition: color 0.2s ease-in;
+   
+   
+
+}
+
+.seccion a:hover{
+
+    color: #ffffff;
+   
+}
+
+.seccion{
+
+    display: inline-block;
+    background-color:#ffffff ;
+    padding: 1px 5px;
+
+    transition: background-color 1s ease-in;
+   
+    transform: scale(1.2) ;
+    transition: transform 0.3s ease;
+
+     transform: rotate(0deg) scale(1);
+
+    
+}
+
+.seccion:hover{
+
+    background-color:#101010 ;
+    transform: rotate(360deg) scale(1.5);
+
+}
+
+.cont-principal{
+
+    grid-area: main;
+    background-color: #ffdef6;
+
+
+}
+
+.pie-pagina{
+
+    grid-area: footer;
+    background-color: #000000;
+
+}
+
+@media screen and (min-width: 576px) {
+
+    body{
+
+        min-height: 100vh;
+    
+        display: grid;
+        grid-template-areas: 
+        
+        "nav main"
+        "nav main"
+        "footer footer";
+    
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 7fr 2fr;
+        
+    
+    }
+
+}
