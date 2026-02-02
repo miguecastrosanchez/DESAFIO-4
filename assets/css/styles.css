@@ -87,12 +87,167 @@ body{
 
 }
 
+/* CONTENIDO PRINCIPAL */
+
 .cont-principal{
 
     grid-area: main;
     background-color: #ffdef6;
 
 }
+
+.texto-w{
+
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    
+    padding: 12px 28px;
+    font-weight: 600;
+    letter-spacing:  5px; ;
+}
+
+.women{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cartas-women{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0px;
+
+    
+}
+
+.card-w{
+
+
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid #000000;
+       
+}
+
+/* .img-m{
+    width: 100%;
+    height: 400px;
+    object-fit: contein;
+    display: block;
+} */
+/* IMAGENES */
+
+.img-muj1{
+
+    width: 100%;
+    height: 360px;
+    background-image: url("../img/MUJER-1A.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: background-image 0.3s ease;
+}
+
+.img-muj1:hover{
+
+    background-image: url("../img/MUJER-1B.png");
+}
+
+.img-muj2{
+
+    width: 100%;
+    height: 360px;
+    background-image: url("../img/MUJER-2A.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: background-image 0.3s ease;
+}
+
+.img-muj2:hover{
+
+    background-image: url("../img/MUJER-2B.png");
+}
+
+.img-muj3{
+
+    width: 100%;
+    height: 360px;
+    background-image: url("../img/MUJER-3A.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: background-image 0.3s ease;
+}
+
+.img-muj3:hover{
+
+    background-image: url("../img/MUJER-3B.png");
+}
+
+.img-muj4{
+
+    width: 100%;
+    height: 360px;
+    background-image: url("../img/MUJER-4A.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: background-image 0.3s ease;
+}
+
+.img-muj4:hover{
+
+    background-image: url("../img/MUJER-4B.png");
+}
+
+.descripcion-w{
+
+    padding: 5px;
+}
+
+.descripcion-w p{
+
+    margin: 0;
+    
+}
+
+.nombre{
+
+    color: #000000;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.tipo{
+
+    color: #6a6a6a;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.color{
+
+    color: #d5d3d3;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.precio{
+
+    color: #000000;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+
 
 /* PIE DE PAGINA */
 
@@ -198,7 +353,7 @@ body{
         "footer footer";
     
         grid-template-columns: 1fr 4fr;
-        grid-template-rows: 1fr 7fr 2fr;
+        /* grid-template-rows: 1fr 7fr 2fr; */
         
     
     }
@@ -263,6 +418,17 @@ body{
         
         transition: color 0.2s ease-in;
         transform: none;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+
+    .cartas-women{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 0px;
+    
+        
     }
 
 }
